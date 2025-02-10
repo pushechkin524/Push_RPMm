@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Products>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+
+    <link rel="stylesheet" href="~/css/styles.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Каталог товаров</h1>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <button class="heart" title="Добавить в избранное" onclick="toggleFavorite(this)">
+                            &hearts;
+                        </button>
+                        <div class="product-details">
+                            @if (item.ImageURL.Any())
+                            {
+                                <img src="@item.ImageURL" alt="@item.Name_" class="product-image" />
+                            }
+                        </div>
+                        <h2 class="product-name">@item.Name_</h2>
+                        <p class="product-description">@item.Description_</p>
+                        <p class="product-price">Цена: @item.Price ₽</p>
+                        <p class="product-category">Категория: @item.Categories?.CategoryName</p>
+
+                        <button class="btn btn-primary mt-3">Добавить в корзину</button>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <!-- JavaScript for toggling favorite status -->
+    <script>
+        function toggleFavorite(element) {
+            element.classList.toggle('liked');
+
+            if (element.classList.contains('liked')) {
+                alert("Добавлено в избранное!");
+            } else {
+                alert("Удалено из избранного!");
+            }
+        }
+    </script>
+</body>
+</html>

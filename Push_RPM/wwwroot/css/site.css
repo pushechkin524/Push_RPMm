@@ -1,0 +1,912 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/next-art');
+
+
+html {
+    font-size: 14px;
+}
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+
+
+@font-face {
+    font-family: NEXT ART;
+    src: url(/NEXTART_Regular.otf);
+}
+
+@import url('https://fonts.cdnfonts.com/css/next-art');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container_head {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+    .container_head img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+.Cont_head_head {
+    position: absolute;
+    top: 50px;
+    margin-left: 20%;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100px;
+    display: flex;
+    gap: 24px;
+}
+
+    .Cont_head_head img {
+        width: 137px;
+        height: 72px;
+        gap: 0px;
+        opacity: 0px;
+        transform: scale(1.2);
+    }
+
+.txt_head_center {
+    position: absolute;
+    top: 58%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-family: NEXT ART;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 75px;
+    width: 1080px;
+    height: 150px;
+    color: white;
+}
+
+.form_head {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 1180px;
+    height: 161px;
+    top: 742px;
+    left: 370px;
+    gap: 0px;
+    opacity: 0px;
+    top: 84%;
+    left: 50.5%;
+    border-radius: 15px;
+}
+
+.Cont_head_head p {
+    font-family: Nunito Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24.55px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+    .Cont_head_head p:hover {
+        color: #F2BE22;
+    }
+
+    .Cont_head_head p:active {
+        text-decoration: underline;
+    }
+
+.Home_txt {
+    margin-left: 180px;
+}
+
+.button_Consult {
+    margin-left: 30px;
+}
+
+.Cont_head_head button {
+    width: 157px;
+    height: 44px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 4px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: white;
+    background-color: #1A3E3E;
+    border: none;
+}
+
+.select {
+    height: 52px;
+    width: 270px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color: aliceblue;
+    outline: none;
+    appearance: none;
+    overflow: hidden;
+    background: url('Vector.svg') no-repeat right;
+    background-position: calc(100% - 10px) center;
+}
+
+.date {
+    height: 50px;
+    width: 258px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    color: aliceblue;
+    outline: none;
+}
+
+.blcom option {
+    background-color: #1A3E3E;
+}
+
+.blcom {
+    width: 270px;
+}
+
+.blcdom {
+    width: 270px;
+}
+
+    .blcdom img {
+        padding: 11px
+    }
+
+.blcom img {
+    padding: 9px;
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('formkit_date.svg');
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 10px 9px 10px 0px;
+}
+
+input[type="date"] {
+    padding-left: 10px;
+}
+
+.form_head_bl {
+    display: flex;
+    margin-top: 4%;
+    gap: 24px;
+    margin-left: 4%;
+}
+
+.buttonform {
+    width: 213px;
+    height: 52px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    color: #1A3E3E;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.imgVideo {
+    width: 480px;
+    height: 526px;
+}
+
+.videowithcard {
+    width: 1180px;
+    height: 526px;
+    display: flex;
+    gap: 120px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Txt2dBlock1 {
+    font-size: 24px;
+    font-family: Nunito Sans;
+    color: #F2BE22;
+    margin: 0;
+}
+
+.Txt2dBlock2 {
+    font-size: 32px;
+    font-family: Nunito Sans;
+    color: #18121E;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Txt2dBlock3 {
+    font-size: 18px;
+    font-family: Nunito Sans;
+    color: #18121E;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Txt2dBlockButton {
+    height: 52px;
+    width: 200px;
+    background-color: #1A3E3E;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .Txt2dBlockButton:hover {
+        background-color: white;
+        border: 2px solid #1A3E3E;
+        color: #1A3E3E;
+    }
+
+    .Txt2dBlockButton:active {
+        border-color: #F2BE22;
+        color: #F2BE22;
+    }
+
+.Predlozhenia {
+    object-fit: cover;
+    height: 771px;
+    background-color: #F3F5F4;
+    margin-top: 6%;
+    display: flex;
+    gap: 90px;
+}
+
+.PredFlex {
+    display: flex;
+    gap: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.samopr {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    height: 691px;
+}
+
+.samopr3 {
+    display: flex;
+    height: 64px;
+    width: 580px;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.opitniyGit {
+    font-size: 18px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Dlia {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    margin: 0;
+}
+
+.containerGrid4 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+}
+
+.ContainerGrid4Margin {
+    margin-top: 40px;
+}
+
+.CardAnimation {
+    width: 1180px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CardAni {
+    position: relative;
+}
+
+.reiting {
+    position: absolute;
+    top: 50px;
+    left: 315px;
+}
+
+.vsplivashka {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Fon {
+    width: 380px;
+    height: 90px;
+}
+
+.FirsttxtVsplivashka {
+    position: absolute;
+    font-size: 24px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    top: 20px;
+    left: 32px;
+}
+
+.SecondtxtVsplivashka {
+    position: absolute;
+    font-size: 14px;
+    font-family: Nunito Sans;
+    color: white;
+    margin: 0;
+    top: 49px;
+    left: 32px;
+}
+
+.valutafon {
+    width: 86px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 4px;
+    top: 25px;
+    left: 262px;
+}
+
+.valuta {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    margin: 0;
+    left: 16px;
+    top: 8px;
+}
+
+.rdBlock {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.Txt2dBlockButton2 {
+    height: 52px;
+    width: 244px;
+    background-color: #1A3E3E;
+    color: white;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    border: none;
+    border-radius: 4px;
+    margin-top: 100px;
+    transition: background-color 0.3s ease;
+}
+
+    .Txt2dBlockButton2:hover {
+        background-color: white;
+        border: 2px solid #1A3E3E;
+        color: #1A3E3E;
+    }
+
+    .Txt2dBlockButton2:active {
+        border-color: #F2BE22;
+        color: #F2BE22;
+    }
+
+.FourBlock {
+    object-fit: cover;
+    height: 1036px;
+    background-color: #F3F5F4;
+    margin-top: 6%;
+    gap: 90px;
+    text-align: center;
+}
+
+.TextPO {
+    padding-top: 80px;
+}
+
+.TxtItalia {
+    font-size: 24px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+}
+
+.TxtItalia2 {
+    font-size: 14px;
+    font-family: Nunito Sans;
+}
+
+.DateIlalia {
+    font-size: 14px;
+    font-family: Nunito Sans;
+    color: #F2BE22;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ReadIlalia {
+    font-size: 14px;
+    font-family: Nunito Sans;
+    color: #1A3E3E;
+    font-weight: bold;
+    margin: 0;
+}
+
+.CardGridThis {
+    width: 580px;
+    height: 312px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+}
+
+.imgIlalia {
+    width: 230px;
+    height: 280px;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.TxtItalia {
+    margin: 0;
+}
+
+.CardGridThis {
+    text-align: start;
+    gap: 24px;
+}
+
+.YellowTxt {
+    display: flex;
+    gap: 121px;
+    padding-top: 60px;
+}
+
+.TxtItalia2 {
+    padding-right: 16px;
+    padding-top: 24px;
+    margin: 0;
+    height: 84px;
+}
+
+.txtItaliaALL {
+    padding-top: 32px;
+    gap: 24px;
+}
+
+.CardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.Txt2dBlockButton21 {
+    height: 52px;
+    width: 244px;
+    background-color: #1A3E3E;
+    color: white;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    border: none;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+    .Txt2dBlockButton21:hover {
+        background-color: white;
+        border: 2px solid #1A3E3E;
+        color: #1A3E3E;
+    }
+
+    .Txt2dBlockButton21:active {
+        border-color: #F2BE22;
+        color: #F2BE22;
+    }
+
+.GridFive {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.FiveBlock {
+    text-align: center;
+}
+
+.TextPO5 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.GridTemplate {
+    grid-column: span 2;
+}
+
+.vslivashka {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 196px;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 6px;
+    margin-top: 100px;
+    left: 17%;
+    right: 17%;
+    justify-content: center;
+}
+
+.Txt1Vspliv {
+    font-size: 18px;
+    font-family: Nunito Sans;
+    color: #F2BE22;
+    margin: 0;
+}
+
+.Txt1Vspliv2 {
+    font-size: 26px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    margin: 0;
+    top: 8px;
+}
+
+.TxtVspliv {
+    width: 380px;
+    height: 90px;
+    padding-top: 40px;
+}
+
+.emailform {
+    width: 280px;
+    height: 44px;
+    background-color: #F3F5F4;
+    border: none;
+    border-radius: 4px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    text-indent: 10px;
+    margin-top: 8px;
+}
+
+.txtSam {
+    font-size: 16px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+}
+
+.buttonForm {
+    height: 46px;
+    width: 280px;
+    background-color: #1A3E3E;
+    color: white;
+    font-size: 16px;
+    font-family: Nunito Sans;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+    .buttonForm:hover {
+        background-color: white;
+        border: 2px solid #1A3E3E;
+        color: #1A3E3E;
+    }
+
+    .buttonForm:active {
+        border-color: #F2BE22;
+        color: #F2BE22;
+    }
+
+
+.FormImail {
+    height: 72px;
+    width: 536px;
+    display: flex;
+    padding-top: 40px;
+    gap: 16px;
+}
+
+.txtSam {
+    margin: 0;
+}
+
+.TXtSoglashenie {
+    width: 536px;
+    height: 36px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+}
+
+.FooterGreen {
+    object-fit: cover;
+    height: 520px;
+    background-color: #1A3E3E;
+    margin-top: 198px;
+    gap: 90px;
+}
+
+.div1foot {
+    height: 263px;
+    width: 441px;
+}
+
+.headfoot1hh {
+    font-size: 20px;
+    font-family: Nunito Sans;
+    color: white;
+    font-weight: bold;
+}
+
+.head2foot1hhh {
+    font-size: 14px;
+    font-family: Nunito Sans;
+    color: white;
+    margin: 0;
+}
+
+.conttxtdiv1foot {
+    display: flex;
+    padding-top: 80px;
+    gap: 24px;
+}
+
+.headfoot1 {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.head2foot1 {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.imgfoot {
+    padding-top: 32px;
+}
+
+.txtfooter {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 178px;
+    display: flex;
+    gap: 50px;
+}
+
+.txtblock2footer {
+    font-size: 20px;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    color: white;
+}
+
+.txtblock2footersecond {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.SpisokFooter {
+    margin: 0;
+    font-size: 14px;
+    font-family: Nunito Sans;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+    .SpisokFooter:hover {
+        color: #F2BE22;
+        text-decoration: underline;
+    }
+
+    .SpisokFooter:active {
+        border-color: #F2BE22;
+        color: #F2BE22;
+    }
+
+.div3foot {
+    padding-left: 70px;
+}
+
+.End {
+    object-fit: cover;
+    height: 66px;
+    background-color: black;
+    gap: 90px;
+}
+
+.txtend {
+    display: flex;
+    gap: 641px;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.txtend1 {
+    color: white;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    margin: 0;
+}
+
+.buttonform:hover {
+    background-color: #1A3E3E;
+    color: white;
+}
+
+.buttonform:active {
+    border: 1px solid white;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.time-block {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.time-block p {
+    font-family: Nunito Sans;
+    margin: 5px 0 0;
+    font-size: 24px;
+    color: #F2BE22;
+    font-size: 25px;
+}
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.heart {
+    background: none;
+    border: none;
+    color: #f00;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+    .heart.liked {
+        color: #f50057;
+    }
+
+.product-name {
+    font-size: 1.25em;
+    margin: 15px 0 10px;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #28a745;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-right: -100px;
+    margin-left: -100px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        max-width: 32%;
+    }
+}

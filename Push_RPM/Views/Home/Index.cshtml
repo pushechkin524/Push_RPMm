@@ -1,0 +1,263 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model HomeViewModel
+<div class="container_head">
+    <img src="images/Rectangle 1.svg">
+    <div class="form_head">
+        <div class="form_head_bl">
+            <div class="blcom">
+                <select name="" class="select">
+                    <option value="" selected disabled>⠀Выберите пол</option>
+                    <option value="">⠀Мужчины</option>
+                    <option value="">⠀Женщины</option>
+                    <option value="">⠀Дети</option>
+                </select>
+                <img src="images/Supporting Text.svg">
+            </div>
+
+            <div class="blcom">
+                <select name="" class="select">
+                    <option value="" selected disabled>⠀Категория товаров</option>
+                    <option value="">⠀Термо белье</option>
+                    <option value="">⠀Куртки</option>
+                    <option value="">⠀Костюмы</option>
+                    <option value="">⠀Аксессуары</option>
+                    <option value="">⠀Палатки</option>
+                    <option value="">⠀Рюкзаки</option>
+                </select>
+                <img src="images/Supporting Text.svg">
+            </div>
+
+            <div class="blcom">
+                <select name="" class="select">
+                    <option value="" selected disabled>⠀Уровень</option>
+                    <option value="">⠀Новичек</option>
+                    <option value="">⠀Средний</option>
+                    <option value="">⠀Профессиональный</option>
+                </select>
+            </div>
+
+            <button class="buttonform">Найти товары </button>
+        </div>
+    </div>
+    <p class="txt_head_center">Найди товары для себя<br> и для своей семьи</p>
+</div>
+<div class="videowithcard">
+    <img class="imgVideo" src="images/Group 1.svg">
+    <div class="Txt2dBlock">
+        <p class="Txt2dBlock1">о нашем подходе</p>
+        <p class="Txt2dBlock2">Исследуйте все горные массивы мира вместе с нами</p>
+        <p class="Txt2dBlock3">Готовы к незабываемым приключениям на природе? Наши товары для кемпинга — это всё, что вам нужно для комфортного отдыха вдали от городской суеты. Легкие палатки, удобные спальники и надежные рюкзаки — с нами каждая деталь продумана, чтобы сделать ваше путешествие безопасным и уютным. Откройте для себя мир новых возможностей и ярких эмоций вместе с нашими товарами для кемпинга! Подготовьтесь к своему идеальному походу уже сегодня!</p>
+        <button class="Txt2dBlockButton">Профессионалы</button>
+    </div>
+</div>
+<div class="Predlozhenia">
+    <div class="PredFlex">
+        <div class="samopr">
+            <p class="Txt2dBlock1">наше предложение</p>
+            <p class="Txt2dBlock2">Лучшие товары для тебя</p>
+            <p class="Txt2dBlock3">
+                Ищете снаряжение для идеального кемпинга? Мы предлагаем всё, что нужно для комфортного и безопасного отдыха на природе! Надежные палатки, многофункциональные фонари, теплые спальники и портативные кухни — наши товары сделают ваш поход простым и приятным.
+            </p>
+            <div class="samopr3">
+                <img src="images/Group 16.svg">
+                <div class="opitniy">
+                    <p class="opitniyGit">Большой опыт</p>
+                    <p class="Dlia">У нас большой опыт в продаже товарfов для кемпинга, и за это время мы стали экспертами в сфере активного отдыха. </p>
+                </div>
+            </div>
+
+            <div class="samopr3">
+                <img src="images/Group 17.svg">
+                <div class="opitniy">
+                    <p class="opitniyGit">Безопасный поход</p>
+                    <p class="Dlia">Надежность наших товаров для кемпинга — это главный приоритет. Мы тщательно отбираем продукцию, чтобы она выдерживала любые условия природы</p>
+                </div>
+            </div>
+
+            <div class="samopr3">
+                <img src="images/Group 18.svg">
+                <div class="opitniy">
+                    <p class="opitniyGit">Лояльные цены</p>
+                    <p class="Dlia">Мы делаем всё возможное, чтобы ваше снаряжение для приключений оставалось по карману.</p>
+                </div>
+            </div>
+            <button class="Txt2dBlockButton">Стоимость товаров</button>
+        </div>
+        <div class="ContainerGrid4Margin">
+            <div class="containerGrid4">
+                <img class="itemToGrid4" src="images/Rectangle 8.svg">
+                <img class="itemToGrid4" src="images/Rectangle 9.svg">
+                <img class="itemToGrid4" src="images/Rectangle 10.svg">
+                <img class="itemToGrid4" src="images/Rectangle 11.svg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rdBlock">
+    <div class="TextPO">
+        <p class="Txt2dBlock1">по версии покупателей</p>
+        <p class="Txt2dBlock2">Популярные направления</p>
+    </div>
+    <div class="CardAnimation">
+        <div class="CardAni">
+            <img src="images/фоновое изображение.svg">
+        </div>
+        <div class="CardAni">
+            <img src="images/фоновое изображение (1).svg">
+        </div>
+        <div class="CardAni">
+            <img src="images/фоновое изображение (2).svg">
+        </div>
+    </div>
+    <button class="Txt2dBlockButton2">Рейтинг направлений</button>
+</div>
+<div class="time-container">
+    @foreach (var time in Model.Time)
+    {
+        <div class="time-block">
+            <h4>@time.Key</h4>
+            <p>@time.Value.ToString("HH:mm:ss")</p>
+        </div>
+    }
+</div>
+<div class="FourBlock">
+    <div class="TextPO">
+        <p class="Txt2dBlock1">делимся впечатлениями</p>
+        <p class="Txt2dBlock2">Блог о путешествиях</p>
+    </div>
+    <div class="CardsGrid">
+        <div class="CardGridThis">
+            <img class="imgIlalia" src="images/Rectangle 19.svg">
+            <div class="txtItaliaALL">
+                <p class="TxtItalia">Красивая Италя, какая она в реальности?</p>
+                <p class="TxtItalia2">Италия — страна в Южной Европе, известная богатой историей, культурным наследием и потрясающей кухней. Здесь находятся такие знаковые достопримечательности, как Колизей в Риме и каналы Венеции.</p>
+                <div class="YellowTxt">
+                    <p class="DateIlalia">13/01/2024</p>
+                    <p class="ReadIlalia">читать статью</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardGridThis">
+            <img class="imgIlalia" src="images/Rectangle 19 (1).svg">
+            <div class="txtItaliaALL">
+                <p class="TxtItalia">Долой сомнения! Весь мир открыт для вас!</p>
+                <p class="TxtItalia2">Потому что мир полон возможностей, и границы для развития и путешествий становятся всё более доступными, открывая новые горизонты для тех, кто готов действовать.</p>
+                <div class="YellowTxt">
+                    <p class="DateIlalia">07/12/2023</p>
+                    <p class="ReadIlalia">читать статью</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardGridThis">
+            <img class="imgIlalia" src="images/Rectangle 19 (2).svg">
+            <div class="txtItaliaALL">
+                <p class="TxtItalia">Как подготовиться к путешествию в одиночку? </p>
+                <p class="TxtItalia2">Подготовка к путешествию в одиночку включает несколько важных шагов</p>
+                <div class="YellowTxt">
+                    <p class="DateIlalia">21/04/2022</p>
+                    <p class="ReadIlalia">читать статью</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardGridThis">
+            <img class="imgIlalia" src="images/Rectangle 19 (3).svg">
+            <div class="txtItaliaALL">
+                <p class="TxtItalia">Красивая Италя, какая она в реальности?</p>
+                <p class="TxtItalia2">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                <div class="YellowTxt">
+                    <p class="DateIlalia">01/04/2023</p>
+                    <p class="ReadIlalia">читать статью</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="Txt2dBlockButton21">Другие материалы</button>
+</div>
+<div class="FiveBlock">
+    <div class="TextPO5">
+        <p class="Txt2dBlock1">фото-отчет</p>
+        <p class="Txt2dBlock2">Делимся впечатлениями</p>
+    </div>
+    <div class="GridFive">
+        <img class="GridTemplate" src="images/Rectangle 20.svg">
+        <img src="images/Rectangle 21.svg">
+        <img src="images/Rectangle 22.svg">
+        <img src="images/Rectangle 24.svg">
+        <img class="GridTemplate" src="images/Rectangle 23.svg">
+        <img src="images/Rectangle 25.svg">
+    </div>
+    <button class="Txt2dBlockButton21">Наш pinterest</button>
+</div>
+<div class="vslivashka">
+    <div class="TxtVspliv">
+        <p class="Txt1Vspliv">актуально</p>
+        <p class="Txt1Vspliv2">Получайте полезные рассылки о новых товарах</p>
+    </div>
+    <div class="AlltestVpsl">
+        <div class="FormImail">
+            <div class="formtxt">
+                <p class="txtSam">Введите e-mail адрес</p>
+                <input class="emailform" type="email" placeholder="name@domain.com">
+            </div>
+            <button class="buttonForm">Подписаться на новости</button>
+        </div>
+    </div>
+</div>
+<div class="FooterGreen">
+    <div class="txtfooter">
+        <div class="div1foot">
+            <p class="headfoot1hh">Компания «TravelTent»</p>
+            <p class="head2foot1hhh">В сердце живописного леса, где небо встречается с землёй, компания "TravelTent" предлагает лучшие товары для вашего идеального приключения на природе. Наши палатки, спальные мешки и снаряжение сделают каждое ваше путешествие незабываемым, наполняя его комфортом и уютом среди дикой красоты</p>
+            <div class="conttxtdiv1foot">
+                <p class="headfoot1">info@domain.com</p>
+                <p class="head2foot1">+7 (123) 456-78-90</p>
+            </div>
+        </div>
+        <div class="div2foot">
+            <p class="txtblock2footer">Наши товары</p>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Одежда</p>
+            </div>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Аксессуары</p>
+            </div>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Палатки</p>
+            </div>
+        </div>
+
+        <div class="div3foot">
+            <p class="txtblock2footer">Важно для путешествий</p>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Как собрать в долгий поход?</p>
+            </div>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Жизненно важные предметы<br>для похода</p>
+            </div>
+            <div class="txtblock2footersecond">
+                <img src="images/Vector (1).svg">
+                <p class="SpisokFooter">Медицинская страховка, гарантии<br>безопасности</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="End">
+    <div class="txtend">
+        <p class="txtend1">ИП Константинопольский К.К., 2023</p>
+        <p class="txtend1">Политика обработки персональных данных</p>
+    </div>
+</div>
+<script src="хуй.js"></script>
+
+
